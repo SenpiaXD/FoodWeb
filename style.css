@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------------------------- Header -----------------------------------*/
+
+header {
+    position: fixed;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: none;
+    width: 100%;
+}
+
+/* ---------------------------- Nav Bar -----------------------------------*/
+
+.menu-button, .menu-button-x {
+    visibility: hidden;
+}
+
+nav ul {
+    visibility: visible;
+    padding-top: 10px;
+    float: right;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* ---------------------------- Home -----------------------------------*/
+
+#home {
+    padding: 200px 0 0 75px;
+    color: white;
+    text-transform: uppercase;
+    background: url(backgroundFood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#home h1{
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+#home p{
+    padding-bottom: 5px;
+}
+
+#click-btn {
+    font-size: 1em;
+    text-transform: uppercase;
+    height: 50px;
+    width: 150px;
+    color: black; 
+    border: 1px solid black;  
+    border-radius: 10px; 
+}
+
+#click-btn:hover {
+    background-color: aqua;
+    color: white;
+}
