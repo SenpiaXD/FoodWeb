@@ -1,3 +1,5 @@
+// Mobile Functionality
+
 const openMenuButton = document.getElementById("open-menu");
 const closeMenuButton = document.getElementById("close-menu");
 const ul = document.getElementById("nav-ul");

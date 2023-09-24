@@ -76,20 +76,20 @@ li a:hover {
 
 #home h5, p{
     position: relative;
-    animation: slideIn 0.9s ease;
+    animation: slideIn 1s ease;
     padding-bottom: 5px;
 }
 
 #home span {
     color:#fb8500;
 }
+
 #click-btn {
     font-size: 1em;
     text-transform: initial;
     height: 50px;
     width: 150px;
-    color: black; 
-    border: 1px solid black;  
+    border: 1px solid white;  
     border-radius: 10px; 
     cursor: pointer;
 }
@@ -101,7 +101,8 @@ li a:hover {
     transition: 0.2s;
 }
 
-@media (max-width: 480px) {
+/* ----------------------------------For Mobile Phone----------------------------------------- */
+@media (max-width: 650px) {
     
     /* ---------------------------- Responsive Navbar --------------------------*/
 
@@ -143,14 +144,14 @@ li a:hover {
     ul {
         display: none;
     }
-
-    .mHome {
-        margin-top: 35px;
-    }
     
     li { 
         list-style-type: none;
         display: block;
+    }
+
+    .mHome {
+        margin-top: 35px;
     }
 
     #home {
@@ -169,10 +170,4 @@ li a:hover {
 @keyframes slideIn {
     from {left: 50px;}
     to {left: 0px;}
-}
-/* Navbar animation */
-
-@keyframes expand {
-    0%  {background-color: #fb8500;}
-    100% {background-color: #fb8500;}
 }
