@@ -10,7 +10,7 @@ openMenuButton.addEventListener("click", () => {
     ul.style.display = "block";
     closeMenuButton.style.display = "block";
     openMenuButton.style.display = "none";
-    home.style.paddingTop = "270px";
+    home.style.paddingTop = "310px";
 });
 
 closeMenuButton.addEventListener("click", () => {
