@@ -15,7 +15,7 @@ body {
 
 header {
     z-index: 1;
-    position: fixed;
+    position: absolute;
     top: 0;
     list-style-type: none;
     margin: 0;
