@@ -31,17 +31,20 @@ header {
     visibility: hidden;
 }
 
+/* navbar, unordered list */
 nav ul {
     visibility: visible;
     padding-top: 10px;
     float: right;
 }
 
+/* list */
 li {
     list-style-type: none;
     display: inline-block;
 }
 
+/* list, a element hypertext  */
 li a {
     display: block;
     color: white;
@@ -51,6 +54,7 @@ li a {
     text-transform: uppercase;
 }
 
+/* navbar logo */
 .nav-logo {
     position: absolute;
     margin: 10px 0 0 15px;
@@ -60,7 +64,7 @@ li a {
     font-weight: 2;
 }
 
-
+/* When the user hover the list and a element */
 li a:hover {
     transition: 0.2s;
     border-radius: 10px;
@@ -70,6 +74,7 @@ li a:hover {
 
 /* ---------------------------- Home -----------------------------------*/
 
+/* Our main content */
 #home {
     padding: 200px 0 0 70px;
     color: white;
@@ -80,6 +85,8 @@ li a:hover {
     height: 100vh;
 }
 
+
+/* Our main content, heading 1 */
 #home h1 {
     position: relative;
     padding-bottom: 5px;
@@ -87,21 +94,26 @@ li a:hover {
     animation: slideIn 0.8s ease;
 }
 
+/* Our main content, heading 1, paragraph */
 #home h5, p{
     position: relative;
     animation: slideIn 1s ease;
     padding-bottom: 5px;
 }
 
+
+/* Our main content, span HTML text Formatting */
 #home span {
     color:#fb8500;
 }
 
+/* Our main content, image */
 #home img {
     border-radius: 25px;
 }
 
 /* ----------------------------------For Mobile Phone----------------------------------------- */
+/* The mobile phone have max width 650px to change the value */
 @media (max-width: 650px) {
     
     /* ---------------------------- Responsive Navbar --------------------------*/
@@ -111,6 +123,7 @@ li a:hover {
         border-radius: 0 0 15px 15px;
     }
 
+    /* open navbar icon  */
     .menu-button {
         margin-top: 3px;
         float: right;
@@ -124,6 +137,7 @@ li a:hover {
         margin-right: 12px;
     }
 
+    /* exit navbar icon  */
     .menu-button-x {
         margin-top: 3px;
         visibility: hidden;
@@ -136,28 +150,34 @@ li a:hover {
         margin-right: 12px;
     }
 
+    /* navbar, unordered list */
     nav ul {
         background-color: #f77f00;
         float: none;
     }
 
+    /* Unordered list */
     ul {
         display: none;
     }
     
+    /* List */
     li { 
         list-style-type: none;
         display: block;
     }
 
+    /* Navbar Logo */
     .nav-logo {
         position: inherit;
     }
 
+    /* HOME class "mHome" in navbar */
     .mHome {
         margin-top: 35px;
     }
 
+    /* Our main content */
     #home {
         padding: 85px 0 0 10px;
         background: url(../img/BackgroundFoodAnimeX.jpg);
