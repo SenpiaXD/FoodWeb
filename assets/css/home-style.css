@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
 }
 
 /* ---------------------------- Header -----------------------------------*/
@@ -21,6 +21,7 @@ header {
     overflow: hidden;
     background: none;
     width: 100%;
+    
 }
 
 /* ---------------------------- Nav Bar -----------------------------------*/
@@ -62,13 +63,16 @@ li a:hover {
     padding: 200px 0 0 70px;
     color: white;
     text-transform: initial;
-    background: url(../img/BackgroundFood.jpg); 
+    background: url(../img/BackgroundFood.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
 }
 
 #home h1 {
+    letter-spacing: 5px;
+    display: inline-block;
+    border-bottom: 2px solid #fb8500;
     position: relative;
     padding-bottom: 5px;
     border-radius: 10px;
@@ -83,6 +87,7 @@ li a:hover {
 
 #home span {
     color:#fb8500;
+    font-weight: bold;
 }
 
 #click-btn {
@@ -100,6 +105,79 @@ li a:hover {
     color: white;
     transform: scale(1.1);
     transition: 0.2s;
+}
+
+/* ----------------------------------About Us----------------------------------------- */
+
+#aboutUs h1 {
+    color: black;
+    margin-top: 40px;
+    letter-spacing: 5px;
+    font-size: 3em;
+    justify-content: center;
+    text-align: center;
+}
+
+/* ----------------------------------About us Main Card-------------------------------- */
+
+.aboutUs-main-card-container {
+    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(2 , auto); 
+    justify-content: center;
+}
+
+.main-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.main-card img {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 350px;
+    max-height: 350px;
+    border-radius: 10px;
+}
+
+.main-card h2 {
+    font-size: 18px;
+}
+
+/* ----------------------------------About us Sub Card-----------------------------=----- */
+
+.aboutUs-sub-card-container {
+    display: grid;
+    grid-template-columns: repeat(6 , auto);    
+    justify-content: center;
+}
+
+.sub-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.sub-card img {
+    min-width: 150px;
+    max-width: 150px;
+    height: 150px;
+    border-radius: 4px;
+}
+
+.sub-card h2 {
+    font-size: 18px;
 }
 
 /* ----------------------------------For Mobile Phone----------------------------------------- */
@@ -161,6 +239,32 @@ li a:hover {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+    }
+
+    .aboutUs-sub-card-container {
+        grid-template-columns: repeat(3, auto);
+    }
+    img {
+        border-radius: 3px;
+    }
+    .main-card {
+        padding: 10px;
+    }
+    .main-card img {
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    .sub-card {
+        padding: 10px;
+    }
+    .sub-card img {
+        min-width: 80px;
+        max-width: 80px;
+        min-height: 80px;
+        max-height: 80px;
     }
 }
 
