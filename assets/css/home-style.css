@@ -180,9 +180,9 @@ li a:hover {
     font-size: 18px;
 }
 
-/* ----------------------------------For Deskopt----------------------------------------- */
+/* ----------------------------------For Deskopt but mobile----------------------------------------- */
 
-@media (max-width: 845px) {
+@media (min-width: 900px) {
     .aboutUs-sub-card-container {
         grid-template-columns: repeat(3 , auto);    
     }
