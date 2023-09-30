@@ -182,7 +182,7 @@ li a:hover {
 
 /* ----------------------------------For Deskopt but mobile----------------------------------------- */
 
-@media (min-width: 900px) {
+@media (min-width: 760px) {
     .aboutUs-sub-card-container {
         grid-template-columns: repeat(3 , auto);    
     }
