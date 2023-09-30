@@ -37,7 +37,7 @@
                 <h1>About Us</h1>
                 <div class="aboutUs-container">
                     <div class="aboutUs-main-card-container">
-                        <div class="main-card">
+                        <div onclick="modalShow()" class="main-card">
                             <img src="./assets/img/animeboy.jpg" alt="Ronnel Cepada">
                         </div>
                         <div class="main-card">
@@ -79,6 +79,27 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Modal View -->
+            <div style="display: none;" id="modal" class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Koni Senpia</h5>
+                        <button id="modal-close" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="aboutUs-container">
+                        <h3 style="text-align: center; padding-top: 20px;">Information Technology</h3>
+                        <div class="aboutUs-main-card-container">
+                            <div class="main-card">
+                                <img src="./assets/img/lopez.png" alt="Argie Delgado">
+                            </div>
+                        </div>
+                        <h6 style="text-align: center;">ID: 02000287369</h6>
+                        <h6 style="text-align: center;">Worked: FrontEnd/BackEnd</h6>
+                    </div>
+                </div>
+            </div>
         </main>
         <script type="text/javascript" src="assets/js/script.js"></script>
     </body>

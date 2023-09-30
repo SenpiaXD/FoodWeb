@@ -19,3 +19,19 @@ closeMenuButton.addEventListener("click", () => {
     openMenuButton.style.display = "block";
     home.style.paddingTop = "85px";
 });
+
+
+// Modal View
+
+const modalClose = document.getElementById("modal-close");
+const modal = document.getElementById("modal");
+
+modalClose.addEventListener("click", () => {
+    // close a modal
+    modal.style.display = "none";
+});
+
+function modalShow() {
+    // showing a modal
+    modal.style.display = "block";
+}
