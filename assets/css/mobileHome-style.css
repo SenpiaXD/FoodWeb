@@ -29,19 +29,20 @@
         margin-right: 12px;
     }
 
-    .menu-button-x {
-        margin-top: 3px;
-        visibility: hidden;
-        float: right;
-        background: none;
-        border: none;
+    #nav-ul.show {
+        display: block;
         color: white;
-        font-size: 25px;
-        cursor: pointer;
-        margin-right: 12px;
+        text-align: center;
+        padding: 12px 25px;
+        text-decoration: none;
+        text-transform: uppercase;
     }
 
-    nav ul {
+    #toggle-menu.active {
+        display: block;
+    }
+
+    nav ul{
         background-color: #343a40;
         float: none;
     }

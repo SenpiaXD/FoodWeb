@@ -1,25 +1,30 @@
 // Mobile Functionality: Responsive Navbar
 
-const openMenuButton = document.getElementById("open-menu");
-const closeMenuButton = document.getElementById("close-menu");
-const ul = document.getElementById("nav-ul");
-const home = document.getElementById("home");
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleMenuButton = document.getElementById("toggle-menu");
+    const navUl = document.getElementById("nav-ul");
+    const home = document.getElementById("home");
 
-openMenuButton.addEventListener("click", () => {
-    closeMenuButton.style.visibility = "visible";
-    ul.style.display = "block";
-    closeMenuButton.style.display = "block";
-    openMenuButton.style.display = "none";
-    home.style.paddingTop = "310px";
+    toggleMenuButton.addEventListener("click", function () {
+        
+        navUl.classList.toggle("show");
+        toggleMenuButton.classList.toggle("active");
+
+        if (navUl.classList.contains("show")) {
+            home.style.paddingTop = "310px";
+        } else {
+            home.style.paddingTop = "85px";
+        }
+
+        window.addEventListener("resize", function () {
+            if (window.innerWidth <= 769) {
+                home.style.paddingTop = "250px";
+            } else {
+                home.style.paddingTop = "200px";
+            }
+        });
+    });
 });
-
-closeMenuButton.addEventListener("click", () => {
-    ul.style.display = "none";
-    closeMenuButton.style.display = "none";
-    openMenuButton.style.display = "block";
-    home.style.paddingTop = "85px";
-});
-
 
 // Functionality for Every View: Modal View 
 
