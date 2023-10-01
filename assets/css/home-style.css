@@ -180,6 +180,16 @@ li a:hover {
     font-size: 18px;
 }
 
+.main-card:hover {
+    animation: 0.8s;
+    transform: scale(1.05);
+}
+
+.sub-card:hover {
+    animation: 0.8s;
+    transform: scale(1.05);
+}
+
 /* ----------------------------------For Deskopt but mobile----------------------------------------- */
 
 @media (max-width: 1075px) {
@@ -188,7 +198,11 @@ li a:hover {
     }
 
     #home {
-        max-height: 250px;
+        min-height: 100%;
+    }
+
+    #click-btn {
+        margin-bottom: 25px;
     }
 }
 
@@ -203,7 +217,11 @@ li a:hover {
     }
 
     #home {
-        max-height: 250px;
+        min-height: 100%;
+    }
+
+    #click-btn {
+        margin-bottom: 25px;
     }
 
     .menu-button {
