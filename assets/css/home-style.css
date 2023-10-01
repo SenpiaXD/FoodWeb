@@ -186,6 +186,10 @@ li a:hover {
     .aboutUs-sub-card-container {
         grid-template-columns: repeat(3 , auto);    
     }
+
+    #home {
+        max-height: 100vh;
+    }
 }
 
 /* ----------------------------------For Mobile Phone----------------------------------------- */
