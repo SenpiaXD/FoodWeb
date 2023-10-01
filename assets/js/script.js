@@ -1,4 +1,4 @@
-// Mobile Functionality
+// Mobile Functionality: Responsive Navbar
 
 const openMenuButton = document.getElementById("open-menu");
 const closeMenuButton = document.getElementById("close-menu");
@@ -21,7 +21,7 @@ closeMenuButton.addEventListener("click", () => {
 });
 
 
-// Modal View
+// Functionality for Every View: Modal View 
 
 const modalClose = document.getElementById("modal-close");
 const modal = document.getElementById("modal");

@@ -128,7 +128,7 @@ li a:hover {
         margin-top: 3px;
         float: right;
         background: none;
-        visibility: visible;
+        display: block;
         border: none;
         color: white;
         font-size: 25px;
@@ -140,7 +140,7 @@ li a:hover {
     /* exit navbar icon  */
     .menu-button-x {
         margin-top: 3px;
-        visibility: hidden;
+        display: none;
         float: right;
         background: none;
         border: none;

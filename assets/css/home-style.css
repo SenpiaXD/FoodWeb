@@ -76,12 +76,12 @@ li a:hover {
     position: relative;
     padding-bottom: 5px;
     border-radius: 10px;
-    animation: slideIn 0.8s ease;
+    animation: slideIn 3s ease;
 }
 
 #home h5, p{
     position: relative;
-    animation: slideIn 1s ease;
+    animation: slideIn 3s ease;
     padding-bottom: 5px;
 }
 
@@ -190,119 +190,7 @@ li a:hover {
     transform: scale(1.05);
 }
 
-/* ----------------------------------For Deskopt but mobile----------------------------------------- */
-
-@media (max-width: 1075px) {
-    .aboutUs-sub-card-container {
-        grid-template-columns: repeat(3 , auto);    
-    }
-
-    #home {
-        min-height: 100%;
-    }
-
-    #click-btn {
-        margin-bottom: 25px;
-    }
-}
-
-/* ----------------------------------For Mobile Phone----------------------------------------- */
-@media (max-width: 740px) {
-    
-    /* ---------------------------- Responsive Navbar --------------------------*/
-
-    header {
-        background-color: #343a40;
-        border-radius: 0 0 15px 15px;
-    }
-
-    #home {
-        min-height: 100%;
-    }
-
-    #click-btn {
-        margin-bottom: 25px;
-    }
-
-    .menu-button {
-        margin-top: 3px;
-        float: right;
-        background: none;
-        visibility: visible;
-        border: none;
-        color: white;
-        font-size: 25px;
-        cursor: pointer;
-        padding: auto 50 50 10;
-        margin-right: 12px;
-    }
-
-    .menu-button-x {
-        margin-top: 3px;
-        visibility: hidden;
-        float: right;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 25px;
-        cursor: pointer;
-        margin-right: 12px;
-    }
-
-    nav ul {
-        background-color: #343a40;
-        float: none;
-    }
-
-    ul {
-        display: none;
-    }
-    
-    li { 
-        list-style-type: none;
-        display: block;
-    }
-
-    .mHome {
-        margin-top: 35px;
-    }
-
-    #home {
-        padding: 85px 0 0 10px;
-        background: url(../img/phoneBackgroundFoodX.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .aboutUs-sub-card-container {
-        grid-template-columns: repeat(3, auto);
-    }
-    img {
-        border-radius: 3px;
-    }
-    .main-card {
-        padding: 10px;
-    }
-    .main-card img {
-        min-width: 150px;
-        max-width: 150px;
-        min-height: 200px;
-        max-height: 200px;
-    }
-
-    .sub-card {
-        padding: 10px;
-    }
-    .sub-card img {
-        min-width: 80px;
-        max-width: 80px;
-        min-height: 80px;
-        max-height: 80px;
-    }
-}
-
-/* ---------------------------- Animation -----------------------------------*/
+/* ----------------------------Slide-in Animation-----------------------------------*/
 
 /* h1 and p animation */
 
