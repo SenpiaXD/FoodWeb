@@ -188,7 +188,7 @@ li a:hover {
     }
 
     #home {
-        max-height: 100vh;
+        max-height: 100%;
     }
 }
 
@@ -200,6 +200,10 @@ li a:hover {
     header {
         background-color: #343a40;
         border-radius: 0 0 15px 15px;
+    }
+
+    #home {
+        max-height: 100%;
     }
 
     .menu-button {
