@@ -28,15 +28,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Functionality for Every View: Modal View 
 
-const modalClose = document.getElementById("modal-close");
-const modal = document.getElementById("modal");
+var jsonDataArray = [
+    {
+        name: "Ronnel Cepada",
+        strand: "Culinary Arts",
+        id: "02000123456",
+        role: "Researcher",
+        imageUrl: "./assets/img/ronnel.jpg"
+    },
+    {
+        name: "Fernando Villanueva Jr.",
+        strand: "Information Technology",
+        id: "02000567329",
+        role: "FrontEnd/BackEnd",
+        imageUrl: "./assets/img/shizuku.jpg"
+    },
+];
 
-modalClose.addEventListener("click", () => {
-    // close a modal
-    modal.style.display = "none";
+function modalShow(cardIndex) {
+    var modal = document.getElementById("modal");
+
+    var modalTitle = modal.querySelector(".modal-title");
+    var modalId = modal.querySelector(".modal-id");
+    var modalStrand = modal.querySelector(".modal-strand");
+    var modalRole = modal.querySelector(".modal-role");
+    var modalImage = modal.querySelector(".modal-image");
+
+    var selectedData = jsonDataArray[cardIndex];
+
+    modalTitle.textContent = selectedData.name;
+    modalStrand.textContent = selectedData.strand;
+    modalId.textContent = "ID: " + selectedData.id;
+    modalRole.textContent = "Worked: " + selectedData.role;
+
+    modalImage.src = selectedData.imageUrl;
+
+    modal.style.display = "block";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    var closeButton = document.querySelector(".modal .btn-close");
+    if (closeButton) {
+        closeButton.addEventListener("click", closeModal);
+    }
 });
 
-function modalShow() {
-    // showing a modal
-    modal.style.display = "block";
+function closeModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "none";
 }
