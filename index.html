@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Css -->
         <link rel="stylesheet" href="assets/css/home-style.css">
+        <!-- Modal Css -->
+        <link rel="stylesheet" href="assets/css/modal-style.css">
         <!-- Css for Mobile -->
         <link rel="stylesheet" href="assets/css/mobileHome-style.css ">
         <!-- Bootstrap -->
@@ -16,7 +18,7 @@
             <nav>
                 <button class="menu-button" id="toggle-menu">&#9776;</button>
                 <ul id="nav-ul">
-                    <li><a href="#home" class="mHome">Home</a></li>
+                    <li><a href="#home" id="mainHome">Home</a></li>
                     <li><a href="#aboutUs">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Contact</a></li>
@@ -25,7 +27,7 @@
         </header>
         <main>
             <!-- Home Page -->
-            <section class="fade-in show-once"  id="home">
+            <section class="fade-in show-once" id="home">
                 <h1>Welcome to our <span>Food</span> Website!</h1>
                 <h5>The only <span>Food</span> Website you need is here.</h5>
                 <p>
@@ -40,44 +42,44 @@
                 <h1>About Us</h1>
                 <div class="aboutUs-container">
                     <div class="aboutUs-main-card-container">
-                        <div onclick="modalShow(0)" class="main-card" data-index="0">
-                            <img src="./assets/img/ronnel.jpg" alt="Ronnel Cepada">
+                        <div onclick="modalShow(0)" class="main-card">
+                            <img src="./assets/img/Members/ronnel.jpg" alt="Ronnel Cepada">
                         </div>
-                        <div onclick="modalShow(1)" class="main-card" data-index="1">
-                            <img src="./assets/img/shizuku.jpg" alt="Fernando Villanueva">
-                        </div>  
+                        <div onclick="modalShow(1)" class="main-card">
+                            <img src="./assets/img/Members/fernando.jpg" alt="Fernando Villanueva">
+                        </div>
                     </div>
                     <!-- Sub Card 1-->
                     <div class="aboutUs-sub-card-container">
-                        <div class="sub-card">
-                            <img src="./assets/img/argieProf.jpg" alt="Argie Delgado">
+                        <div onclick="modalShow(2)" class="sub-card">
+                            <img src="" alt="Mark Vincent">
                         </div>
-                        <div class="sub-card">
-                            <img src="./assets/img/lopez.png" alt="Ryan Consigna">
+                        <div onclick="modalShow(3)" class="sub-card">
+                            <img src="" alt="Jozh Ryle Jimenez">
                         </div>
-                        <div class="sub-card">
-                            <img src="./assets/img/Mark.jpg" alt="Mark Vincent">
+                        <div onclick="modalShow(4)" class="sub-card">
+                            <img src="" alt="James Gesto">
                         </div>
-                        <div class="sub-card">
-                            <img src="./assets/img/Ryle.jpg" alt="Jozh Ryle Jimenez">
+                        <div onclick="modalShow(5)" class="sub-card">
+                            <img src="" alt="member of culinary">
                         </div>
-                        <div class="sub-card">
-                            <img src="./assets/img/fegalan.jpg  " alt="Christopher fegalanJames Gesto">
+                        <div onclick="modalShow(6)" class="sub-card">
+                            <img src="" alt="Argie Delgado">
                         </div>
-                        <div class="sub-card">
-                            <img src="./assets/img/arciga.png" alt="Christopher fegalan">
+                        <div onclick="modalShow(7)" class="sub-card">
+                            <img src="" alt="Ryan Consigna">
                         </div>
                     </div>
                     <!-- Sub Card 2-->
                     <div class="aboutUs-sub-card-container">
-                        <div class="sub-card">
-                            <img src="./assets/img/kyle.jpg" alt="Khyle Macasilhig">
+                        <div onclick="modalShow(8)" class="sub-card">
+                            <img src="" alt="Christopher Fegalan">
                         </div>
-                        <div class="sub-card">
-                            <img src="./assets/img/ryan.jpg" alt="Ryan Consigna">
+                        <div onclick="modalShow(9)" class="sub-card">
+                            <img src="" alt="Khyle Myrvin Macasilhig">
                         </div>
-                        <div class="sub-card">
-                            <img src="./assets/img/jude.png" alt="Jude Cedric Seguin">
+                        <div onclick="modalShow(10)" class="sub-card"">
+                            <img src="" alt="Jude Cedric Seguin">
                         </div>
                     </div>
                 </div>
@@ -91,10 +93,10 @@
                             <h5 class="modal-title"></h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="aboutUs-container">
+                        <div class="aboutUs-containers">
                             <h3 style="text-align: center; padding-top: 20px;" class="modal-strand"></h3>
-                            <div class="aboutUs-main-card-container">
-                                <div class="main-card">
+                            <div class="modal-aboutUs-imgcontainer">
+                                <div class="modal-aboutUs-cards">
                                     <img src="" alt="Image" class="modal-image">
                                 </div>
                             </div>
@@ -105,6 +107,7 @@
                 </div>
             </div>
         </main>
+        <!-- Javascript -->
         <!-- Import Scroller Revealer Library-->
         <script src="https://unpkg.com/scrollreveal"></script>
         <script type="text/javascript" src="assets/js/scrollreveal.js"></script>

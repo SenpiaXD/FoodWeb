@@ -19,14 +19,12 @@ header {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: none;
     width: 100%;
-    
 }
 
 /* ---------------------------- Nav Bar -----------------------------------*/
 
-.menu-button, .menu-button-x {
+.menu-button {
     visibility: hidden;
 }
 

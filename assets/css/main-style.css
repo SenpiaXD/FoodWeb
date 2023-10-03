@@ -27,7 +27,7 @@ header {
 
 /* ---------------------------- Nav Bar -----------------------------------*/
 
-.menu-button, .menu-button-x {
+.menu-button{
     visibility: hidden;
 }
 
