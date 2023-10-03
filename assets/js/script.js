@@ -31,7 +31,6 @@ const listView = document.getElementById("nav-ul");
 
 listView.addEventListener("click", () => {
     listView.classList.toggle("show");
-    home.style.paddingTop = "85px";
 });
 
 // Functionality for Every View: Modal View 
