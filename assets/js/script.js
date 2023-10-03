@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (navUl.classList.contains("show")) {
             // home.style.paddingTop = "310px";
         } else {
-            home.style.paddingTop = "85px";
+            // home.style.paddingTop = "85px";
         }
 
         window.addEventListener("resize", function () {
