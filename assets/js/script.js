@@ -78,7 +78,7 @@ var jsonDataArray = [
         strand: "Culinary Arts",
         id: "02000123456",
         role: "Leader of Culinary/Researcher/Designer",
-        imageUrl: "../assets/img/Members/ronnel.jpg"
+        imageUrl: "./assets/img/Members/ronnel.jpg"
     },
     {
         name: "Fernando Villanueva Jr.",
