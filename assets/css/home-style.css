@@ -231,6 +231,11 @@ li a:hover {
     border-radius: 10px;
 }
 
+.service-card:hover {
+    animation: 0.8s;
+    transform: scale(1.05);
+}
+
 /* ---------------------------------- Contact Us ----------------------------------------- */
 
 #contact h1 {
