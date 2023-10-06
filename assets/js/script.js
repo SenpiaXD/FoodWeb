@@ -86,3 +86,22 @@ window.addEventListener('scroll', function() {
         backButton.style.display = 'none';
     }
 });
+
+// Hide navbar 
+
+let prevScrollPos = window.scrollY;
+    
+const navbar = document.getElementById("overlay");
+
+window.onscroll = () => {
+    const currentScrollPos = window.scrollY;
+
+    // Check if scrolling down and not in mobile view (viewport width >= 950px)
+    if (currentScrollPos > prevScrollPos && window.innerWidth >= 950) {
+        navbar.style.top = "-75px";
+    } else {
+        navbar.style.top = "0";
+    }
+
+    prevScrollPos = currentScrollPos;
+};
