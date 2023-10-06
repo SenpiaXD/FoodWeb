@@ -1,0 +1,80 @@
+[
+    {
+        "name": "Ronnel Cepada",
+        "strand": "Culinary Arts",
+        "id": "02000123456",
+        "role": "Leader of Culinary/Researcher/Designer",
+        "imageUrl": "./assets/img/Members/ronnel.jpg"
+    },
+    {
+        "name": "Fernando Villanueva Jr.",
+        "strand": "Information Technology",
+        "id": "02000295576",
+        "role": "Leader of IT/FrontEnd/BackEnd/Researcher",
+        "imageUrl": "./assets/img/Members/fernando.jpg"
+    },
+    {
+        "name": "Mark Vincent",
+        "strand": "Culinary Arts",
+        "id": "",
+        "role": "Researcher",
+        "imageUrl": ""
+    },
+    {
+        "name": "Jozh Ryle Jimenez",
+        "strand": "Culinary Arts",
+        "id": "",
+        "role": "Researcher",
+        "imageUrl": ""
+    },  
+    {   
+        "name": "James Gesto",
+        "strand": "Culinary Arts",
+        "id": "",
+        "role": "Researcher",
+        "imageUrl": ""
+    },
+    {   
+        "name": "memeber of culinary",
+        "strand": "Culinary Arts",
+        "id": "",
+        "role": "Researcher",
+        "imageUrl": ""
+    },
+    {
+        "name": "Argie Delgado",
+        "strand": "Information Technology",
+        "id": "02000287369",
+        "role": "FrontEnd/BackEnd/Researcher",
+        "imageUrl": "./assets/img/Members/argie.jpg"
+    },
+    {
+        "name": "Ryan Consigna",
+        "strand": "Information Technology",
+        "id": "02000303132",
+        "role": "Researcher/Designer",
+        "imageUrl": "./assets/img/Members/ryan.jpg"
+    },
+    {
+        "name": "Christopher Fegalan",
+        "strand": "Information Technology",
+        "id": "02000306245",
+        "role": "FrontEnd/BackEnd/Researcher",
+        "imageUrl": ""
+    },
+    {   
+        "name": "Khyle Myrvin Macasilhig",
+        "strand": "Information Technology",
+        "id": "02000307446",
+        "role": "FrontEnd/Researcher",
+        "imageUrl": "./assets/img/Members/macasilhig.jpg"
+        
+    },
+    {
+        "name": "Jude Cedrick Seguin",
+        "strand": "Information Technology",
+        "id": "02000300777",
+        "role": "FrontEnd/Researcher",
+        "imageUrl": "./assets/img/Members/jude.jpg"
+    }
+]
