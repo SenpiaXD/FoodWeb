@@ -35,7 +35,7 @@ function modalShow(cardIndex) {
     // Enable blur effect
     blurElement.style.backgroundColor = "(0, 0, 0, 0.5);"
     blurElement.style.backdropFilter = "blur(5px)";
-    blurElement.style.height = "100%";
+    blurElement.style.height = "1000%";
     blurElement.style.width = "100%";
 
     modal.style.display = "block";

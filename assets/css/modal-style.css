@@ -1,7 +1,7 @@
 /* Modal for About Us*/
 .modal {
-    padding-top: 30px;
     position: fixed;
+    animation: blowUpModal .5s forwards;
 }
 
 .modal-aboutUs-imgcontainer {
@@ -41,3 +41,14 @@
         position: fixed;
     }
 }
+
+/* blowUpModal  */
+
+@keyframes blowUpModal {
+    0% {
+      transform:scale(0);
+    }
+    100% {
+      transform:scale(1);
+    }
+  }
