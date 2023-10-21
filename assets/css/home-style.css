@@ -59,6 +59,18 @@ li a:hover {
     z-index: 3;
 }
 
+/* Login Button */
+
+.login-btn {
+    font-size: 1em;
+    margin-right: 25px;
+    height: 35px;
+    width: 120px;
+    border: none;
+    background-color: #0056b3;
+    border-radius: 10px;
+}
+
 /* ---------------------------- Home -----------------------------------*/
 
 #home {
@@ -88,12 +100,12 @@ li a:hover {
 
 #click-btn {
     font-size: 1em;
-    text-transform: initial;
     height: 50px;
     width: 150px;
-    border: 1px solid white;  
+    border: 1px solid #0056b3;  
     border-radius: 10px; 
     cursor: pointer;
+    background-color: #0056b3;
 }
 
 #click-btn:hover {
