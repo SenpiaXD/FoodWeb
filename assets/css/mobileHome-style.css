@@ -1,0 +1,186 @@
+/*---------------------------------- For Mobile Phone ---------------------------------------- */
+/* Media query for viewport width 950px or below */
+@media (max-width: 950px) {
+    
+    /*----------------------------- Responsive Navbar -----------------------------------------*/
+
+    header {
+        top: 0;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0 0 15px 15px;
+    }
+
+    #home {
+        min-height: 100vh;
+    }
+
+    #click-btn {
+        margin-bottom: 25px;
+    }
+
+    .menu-button {
+        margin-top: 3px;
+        float: right;
+        background: none;
+        visibility: visible;
+        border: none;
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+        padding: auto 50 50 10;
+        margin-right: 12px;
+    }
+
+    #nav-ul.show {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 12px 25px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    #toggle-menu.active {
+        display: block;
+    }
+
+    nav ul{
+        background-color: rgba(0, 0, 0, 0.5);;
+        float: none;
+    }
+
+    ul {
+        display: none;
+    }
+    
+    li { 
+        list-style-type: none;
+        display: block;
+    }
+
+    /*--------------------------------------- Home ---------------------------------------------*/
+    
+    #mainHome {
+        margin-top: 35px;
+    }
+
+    #home {
+        padding: 85px 0 0 10px;
+        background: url(../img/Background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /*------------------------------ About us Main/Sub Cards -----------------------------------*/
+    img {
+        border-radius: 3px;
+    }
+
+    .main-card {
+        padding: 10px;
+    }
+
+    .main-card img {
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+    
+    .aboutUs-sub-card-container {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .sub-card {
+        padding: 10px;
+    }
+
+    .sub-card img {
+        min-width: 80px;
+        max-width: 80px;
+        min-height: 80px;
+        max-height: 80px;
+    }
+
+    /* ------------------------------------ Service ------------------------------------------- */
+
+    .service-container {
+        margin: 50px;
+    }
+
+    .service-card-container {
+        padding-bottom: 25px;
+        display: grid;
+        grid-template-columns: repeat(1 , auto); 
+        justify-content: center;
+    }
+
+    .service-card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin: 10px auto;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+
+    .service-card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+    
+    .service-card img {
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+    
+    /* ------------------------------------ Contact ------------------------------------------- */
+
+    #contact {
+        margin: 15px;
+    }
+
+}
+
+/*------------------------------Desktop mode for Mobile Phone-----------------------------------*/
+/* Media query for viewport width 1075px or below */
+@media (max-width: 1250px) {
+    .aboutUs-sub-card-container {
+        grid-template-columns: repeat(3 , auto);    
+    }
+
+    #home {
+        min-height: 100%;
+    }
+
+    #click-btn {
+        margin-bottom: 25px;
+    }
+}
+
+/* Media query for viewport width 370px or below */
+@media (max-width: 370px) {
+
+    .main-card img {
+        min-width: 120px;
+        max-width: 120px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    .sub-card img {
+        min-width: 75px;
+        max-width: 75px;
+        min-height: 75px;
+        max-height: 75px;
+    }
+}
