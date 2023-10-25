@@ -85,6 +85,11 @@
         overflow-x: scroll;
     }
 
+    swiper-slide {
+        max-width: 300px;
+        min-width: 300px;
+    }
+
     .main-card {
         padding: 10px;
     }
