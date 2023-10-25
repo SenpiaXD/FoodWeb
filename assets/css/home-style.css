@@ -15,7 +15,7 @@ body {
 
 header {
     transition: 0.3s;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     list-style-type: none;
     margin: 0;
@@ -134,8 +134,17 @@ li a:hover {
 /* ----------------------------------About us Main Card-------------------------------- */
 
 .aboutUs-main-card-container {
-    overflow-x: scroll;
     display: flex;
+}
+
+/* Swiper JS  */
+
+swiper-container {
+    width: 100%;
+}
+
+swiper-slide {
+    width: 250px;
 }
 
 .main-card {
