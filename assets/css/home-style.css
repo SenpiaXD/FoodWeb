@@ -324,13 +324,3 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
-
-
-/* ----------------------------Slide-in Animation-----------------------------------*/
-
-/* h1 and p animation */
-
-@keyframes slideIn {
-    from {left: 50px;}
-    to {left: 0px;}
-}
