@@ -12,6 +12,7 @@ body {
 
 /* Session layout */
 .session {
+  box-shadow: 0 0 100px 0 #e9eefc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +23,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 4px;
-  box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.10);
   overflow: hidden;
 }
 
