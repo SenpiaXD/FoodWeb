@@ -12,7 +12,7 @@ body {
 
 /* Session layout */
 .session {
-  box-shadow: 0 0 100px 0 #e9eefc;
+  box-shadow: 100px 100px 1000px 100px #e9eefc;
   display: flex;
   justify-content: center;
   align-items: center;
