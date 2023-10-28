@@ -2,6 +2,8 @@
     <html lang="en">
     <head>
         <link rel="stylesheet" href="../css/login.css">
+        <!-- Awesome Fonts -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <title>| Login</title>
     </head>
     <body>
@@ -18,9 +20,12 @@
                         <label for="username">Username:</label>
                     </div>
                     <div class="floating-label">
-                        <input placeholder=" " type="password" name="password" id="password" autocomplete="off">
-                        <label for="password">Password:</label>
-                    </div>                    
+                        <div class="password-input">
+                            <input placeholder=" " type="password" name="password" id="password" autocomplete="off">
+                            <label for="password">Password:</label>
+                            <span class="toggle-password"><i class="far fa-eye"></i></span>
+                        </div>
+                    </div>
                     <input onclick="loginValidation()" type="button" value="Log in">
                 </form>
                 <p>V.1.0</p>

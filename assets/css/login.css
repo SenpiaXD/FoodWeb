@@ -12,7 +12,7 @@ body {
 
 /* Session layout */
 .session {
-  box-shadow: 100px 100px 1000px 100px #e9eefc;
+  box-shadow: 0 0 100px 50px #e3eafc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 4px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -141,4 +141,16 @@ input:not(:placeholder-shown) + label {
   top: -15px;
   font-size: 12px;
   color: #333;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
