@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+* {                         
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', sans-serif, serif;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* ---------------------------- Header -----------------------------------*/
+
+header {
+    transition: 0.3s;
+    z-index: 10;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ---------------------------- Nav Bar -----------------------------------*/
+
+.menu-button {
+    visibility: hidden;
+}
+
+nav ul {
+    visibility: visible;
+    padding-top: 10px;
+    float: right;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+li a:hover {
+    transition: 0.2s;
+    border-radius: 10px;
+    transform: scale(1.2);
+    z-index: 3;
+}
+
+/* Login Button */
+
+.login-btn {
+    color: white;
+    font-size: 1em;
+    margin-right: 25px;
+    height: 35px;
+    width: 120px;
+    border: none;
+    background-color: #0056b3;
+    border-radius: 10px;
+}
+
+/* ---------------------------- Home -----------------------------------*/
+
+#home {
+    padding: 200px 0 0 70px;
+    color: white;
+    background: url(../img/background2-PhotoRoom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#home h1 {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+#home h5, p{
+    padding-bottom: 5px;
+}
+
+#home span {
+    color:#fb8500;
+    font-weight: bold;
+}
+
+#click-btn {
+    color: white;
+    font-size: 1em;
+    height: 50px;
+    width: 150px;
+    border: 1px solid #0056b3;  
+    border-radius: 10px; 
+    cursor: pointer;
+    background-color: #0056b3;
+}
+
+#click-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+/* ----------------------------------About Us----------------------------------------- */
+
+#aboutUs h1 {
+    color: black;
+    margin-top: 100px;
+    letter-spacing: 5px;
+    font-size: 3em;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutUs-container {
+    background-color: #F1F1F1;
+}
+
+/* ----------------------------------About us Main Card-------------------------------- */
+
+.aboutUs-main-card-container {
+    display: flex;
+}
+
+/* Swiper JS  */
+
+swiper-container {
+    width: 100%;
+}
+
+swiper-slide {
+    max-width: 270px;
+}
+
+.main-card {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-card:hover{
+    cursor: pointer;
+}
+
+.main-card img {
+    min-width: 125px;
+    max-width: 125px;
+    min-height: 125px;
+    max-height: 125px;
+    border-radius: 100px;
+}
+
+.main-card h6 {
+    padding-top: 25px;
+    font-size: 18px;
+}
+
+/* ---------------------------------- Services ----------------------------------------- */
+
+#service h1 {
+    color: black;
+    margin-top: 40px;
+    letter-spacing: 5px;
+    font-size: 3em;
+    justify-content: center;
+    text-align: center;
+}
+
+.service-container {
+    margin: 50px;
+}
+
+.service-card-container {
+    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(3 , auto); 
+    justify-content: center;
+}
+
+.service-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.service-card img {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 350px;
+    max-height: 350px;
+    border-radius: 10px;
+}
+
+.service-card:hover {
+    animation: 0.8s;
+    transform: scale(1.05);
+}
+
+/* ---------------------------------- Contact Us ----------------------------------------- */
+
+#contact h1 {
+    color: black;
+    margin-top: 40px;
+    letter-spacing: 5px;
+    font-size: 3em;
+    justify-content: center;
+    text-align: center;
+}
+
+body, h1, p, input, textarea, form {
+    margin: 0;
+    padding: 0;
+}
+
+#form {
+    max-width: 600px;
+    margin: 45px auto;
+    padding: 20px   ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="button"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* ---------------------------- Footer -----------------------------------*/
+
+footer {
+    font-size: 16px;
+    padding-top: 50px;
+    margin-top: 10px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 125px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* ---------------------------- Responsive Arrorw-up --------------------------*/
+
+.back-to-Top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+    text-align: center;
+    line-height: 45px;
+}
+
+.back-to-Top.shown {
+    display: block;
+    visibility: visible;
+    transform: none;
+}
+
+.back-to-Top img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ----------------------------Slide-in Animation-----------------------------------*/
+
+/* h1 and p animation */
+
+@keyframes slideIn {
+    from {left: 50px;}
+    to {left: 0px;}
+}

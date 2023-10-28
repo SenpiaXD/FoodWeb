@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" href="../css/login.css">
+        <title>| Login</title>
+    </head>
+    <body>
+        <div class="session">
+            <div class="left">
+                <img src="https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Background Image" class="background-image">
+            </div>
+            <div class="right">
+                <form id="login-form">
+                    <h1>We are <span>INVENTA</span></h1>
+                    <h4>Welcome back! Log in to your account to view today's clients:</h4>
+                    <div class="floating-label">
+                        <input placeholder=" " type="text" name="username" id="username" autocomplete="off">
+                        <label for="username">Email:</label>
+                    </div>
+                    <div class="floating-label">
+                        <input placeholder=" " type="password" name="password" id="password" autocomplete="off">
+                        <label for="password">Password:</label>
+                    </div>                    
+                    <input onclick="loginValidation()" type="button" value="Log in">
+                </form>
+                <p>V.1.0</p>
+            </div>
+        </div>
+        <!-- Sweet Alert -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- JS -->
+        <script type="text/javascript" src="../js/login.js"></script>
+    </body>
+</html>
