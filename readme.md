@@ -1,1 +1,0 @@
-Inventa: A Web-Based Sales and Inventory Management System for Culinary students and small business produced by G12 IT Students of STI College Marikina.
