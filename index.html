@@ -1,0 +1,249 @@
+<!DOCTYPE html>     
+<html lang="en">
+    <head>
+        <meta name="Author" content="ICTE201">
+        <meta name="Description" content="IT and Culinary collaboration">
+        <meta name="Keywords" content="HTML, CSS, JS, JSON">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Css -->
+        <link rel="stylesheet" href="assets/css/home-style.css">
+        <!-- Modal Css -->
+        <link rel="stylesheet" href="assets/css/modal-style.css">
+        <!-- Css for Mobile -->
+        <link rel="stylesheet" href="assets/css/mobileHome-style.css ">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css" >            
+        <title>Sales Management System</title>
+    </head>
+    <body>
+        <nav id="first-nav">
+            <a href="./assets/html/login.html" id="link-logo">
+                <h5>Inventa</h5>
+            </a>
+        </nav>
+        <header id="overlay">
+            <nav>
+                <li><a href="#logo-icon" id="logo-name"><span>I</span>nventa</a></li>
+                <button class="menu-button" id="toggle-menu" onclick="openNav()">&#9776;</button>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul id="nav-ul">
+                        <li><a href="#home" id="mainHome">Home</a></li>
+                        <li><a href="#aboutUs">About us</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main> 
+            <!-- Home Page -->
+            <section class="fade-in show-once" id="home">
+            <a href="#home" title="home-link"></a>
+                <h1 id="typer"></h1>
+                <h5 id="typer2"></h5>
+                <p>
+                    The Sales management system will efficiently handle customer transactions<br> 
+                    while also storing valuable customer purchase history, enhancing the overall management <br>
+                    of the business's sales operations. This system will provide businesses with valuable insights<br> 
+                    into customer preferences and buying patterns, enabling data-driven decisions for <br> 
+                    improved customer relationship building.
+                </p>       
+                <a href="https://www.businessnewsdaily.com/16553-pos-inventory-management.html" target="_blank">
+                    <button id="click-btn">Learn More!</button>
+                </a>
+            </section>
+            <!-- About Us -->   
+            <section class="fade-in show-once" id="aboutUs">
+            <a href="#aboutUs" title="aboutUs-link"></a>
+                <h1>About Us</h1>
+                <div>
+                    <h6 style="margin: 50px; text-align: center; line-height: 25px;">
+                        We are a dedicated team of G12 students from STI College Marikina, driven by a passion for technology and a shared vision to empower culinary businesses. With our combined skills in programming, data management, and creative problem-solving, we have embarked on a journey to create a Sales and Inventory Management System that will make a significant impact in the culinary industry. Our mission is to provide culinary establishments with a user-friendly and efficient tool that not only simplifies their daily operations but also helps them make informed decisions based on real-time sales and inventory data. We are committed to delivering a system that can optimize processes, reduce waste, and ultimately contribute to the success of our clients in the culinary world. As we work on this project for our expo program, we are excited about the opportunity to apply our knowledge, gain real-world experience, and make a positive difference in the culinary sector. We look forward to sharing our progress and the final product with the community and industry partners. Thank you for your support and interest in our endeavor."
+                    </h6>
+                </div>
+                <div class="aboutUs-container">
+                    <h2 style="text-align: center; padding-bottom: 50px; padding-top: 50px;" >Meet our team</h2>
+                    <div class="aboutUs-main-card-container">
+                        <swiper-container class="mySwiper" pagination="true" grab-cursor="true" slides-per-view="auto" pagination-dynamic-bullets="true" navigation="true">
+                            <swiper-slide>
+                                <div onclick="modalShow(0)" class="main-card">
+                                    <img src="./assets/img/Members/ronnel.jpg" alt="Mercado, Ronnel C.">
+                                    <h6>Mercado Ronnel</h6>  
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div onclick="modalShow(1)" class="main-card">
+                                    <img src="./assets/img/Members/fernando.jpg" alt="Villanueva, Fernando Jr T.">
+                                    <h6>Villanueva Fernando Jr</h6>  
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div onclick="modalShow(2)" class="main-card">
+                                    <img src="./assets/img/Members/vincent.jpg" alt="Dimaculangan, Mark Vincent">
+                                    <h6>Dimaculangan Mark Vincent</h6>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div onclick="modalShow(3)" class="main-card">
+                                    <img src="./assets/img/Members/Jozh.jpg" alt="Jimenez, Jozh Ryle Fernando">
+                                    <h6>Jimenez Jozh Ryle</h6>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div onclick="modalShow(4)" class="main-card">
+                                    <img src="" alt="Gestoso, James Andrei E.">
+                                    <h6>Gestoso James Andrei</h6>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div onclick="modalShow(5)" class="main-card">
+                                    <img src="./assets/img/Members/miguel.jpg" alt="Muñoz, Ludolfo Ma. Miguel L.">
+                                    <h6>Muñoz Miguel</h6>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div onclick="modalShow(6)" class="main-card">
+                                    <img src="./assets/img/Members/argie.jpg" alt="Delgado, Argie P.">
+                                    <h6>Delgado Argie</h6>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div onclick="modalShow(7)" class="main-card">
+                                    <img src="./assets/img/Members/ryan.jpg" alt="Consigna, Ryan L.">
+                                    <h6>Consigna Ryan</h6>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div onclick="modalShow(8)" class="main-card">
+                                    <img src="./assets/img/Members/fegalan.jpg" alt="Fegalan, Christopher T.">
+                                    <h6>Fegalan Christopher</h6>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div onclick="modalShow(9)" class="main-card">
+                                    <img src="./assets/img/Members/macasilhig.jpg" alt="Macasilhig, Khyle Myrvin P.">
+                                    <h6>Macasilhig Khyle Myrvin</h6>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div onclick="modalShow(10)" class="main-card">
+                                    <img src="./assets/img/Members/jude.jpg" alt="Seguin, Jude Cedric M.">
+                                    <h6>Seguin Jude Cedric</h6>
+                                </div>
+                            </swiper-slide>
+                        </swiper-container>
+                    </div>
+                </div>
+            </section>
+            <!-- Service -->
+            <section class="fade-in show-once" id="service">
+            <a href="#service" title="service-link"></a>
+                <h1>Services</h1>
+                <div class="service-container">
+                    <div class="service-card-container">
+                        <div class="service-card">
+                            <h4>Front-end Coding</h4>
+                            <img src="assets/img/gif/Frontend.gif" alt="front-end logo" loading="lazy" />
+                            <p>
+                                We are a capable and efficient team of front-end developers with expertise in 
+                                HTML, CSS, and JavaScript. Our collective experience extends to various front-end frameworks, 
+                                libraries, and tools, allowing us to deliver high-quality web solutions.
+                            </p>
+                        </div>
+                        <div class="service-card">
+                            <h4>Performance Optimization</h4>
+                            <img src="assets/img/gif/Optimization.gif" alt="Optimization">
+                            <p>
+                                We possess in-depth knowledge and expertise in optimizing 
+                                front-end code and assets to enhance website loading times 
+                                and provide an exceptional user experience.
+                            </p>
+                        </div>
+                        <div class="service-card">
+                            <h4>Responsive Web Design</h4>
+                            <img src="assets/img/gif/Responsiveness.gif" alt="responsive logo" loading="lazy"/>
+                            <p>
+                                As a team, we excel in developing responsive web applications 
+                                that adapt seamlessly to various screen sizes and devices, 
+                                ensuring a consistent and user-friendly experience across the board.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact -->
+            <section class="fade-in show-once" id="contact">
+                <a href="#contact" title="contact"></a>
+                <h1>Contact Us</h1>
+                <div id="form">
+                    <form id ="contact-form">
+                        <label>Name:</label> <br>
+                        <input type="text" id="fullName" required> <br>
+
+                        <label>Email:</label> <br>
+                        <input type="text" id="email_id" required> <br>
+
+                        <label>Comment:</label> <br>
+                        <textarea id="message" rows="4" required></textarea> <br>
+
+                        <input onclick="SendMail()" type="button" value="Submit">
+                    </form>
+                </div>
+            </section>
+            
+            <!-- Modal View -->
+            <div style="display: none;" id="modal" class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="aboutUs-containers">
+                            <h3 style="text-align: center; padding-top: 20px;" class="modal-strand"></h3>
+                            <div class="modal-aboutUs-imgcontainer">
+                                <div class="modal-aboutUs-cards">
+                                    <img src="" alt="Image" class="modal-image">
+                                </div>
+                            </div>
+                            <h6 style="text-align: center;" class="modal-id"></h6>
+                            <h6 style="text-align: center; padding-bottom: 25px;" class="modal-role"></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div onclick="backToTop()">
+            <a aria-label="Back to Top" class="back-to-Top" id="top">
+                <img src="./assets/img/arrow.svg" alt="Arrow Up" />
+            </a>
+        </div>
+
+        <footer id="footer">
+                Created by ICTE201 2023</p>
+        </footer>
+
+        <!-- Javascript -->
+        <script type="text/javascript" src="assets/js/script.js"></script>
+        <!-- Type Writter -->
+        <script type="text/javascript" src="assets/js/typewritter.js"></script>
+        <!-- Sweet Alert -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- SwiperJS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+        <!-- Import Scroller Revealer Library-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script type="text/javascript" src="assets/js/scrollreveal.js"></script>
+        <!-- EmailJS -->
+        <script type="text/javascript" src="./assets/js/sendMail.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("JsXPaZimgE6cIOmMS");
+            })();
+        </script>
+    </body>
+</html>
