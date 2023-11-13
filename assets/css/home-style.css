@@ -85,19 +85,6 @@ li a:hover {
     z-index: 3;
 }
 
-/* Login Button */
-
-.login-btn {
-    color: #111;
-    font-size: 1em;
-    margin-right: 25px;
-    height: 35px;
-    width: 120px;
-    border: none;
-    background: none;
-    border-radius: 10px;
-}
-
 /* ---------------------------- Home -----------------------------------*/
 
 #home {
@@ -120,7 +107,7 @@ li a:hover {
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.6);
-        z-index: -1;
+        z-index: -2;
     }
 }
 
@@ -143,7 +130,7 @@ li a:hover {
     text-align: center;
 }
 
-#click-btn {
+.click-btn {
     color: white;
     font-size: 1em;
     height: 50px;
@@ -152,9 +139,10 @@ li a:hover {
     border-radius: 10px; 
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.2s;
 }
 
-#click-btn:hover {
+.click-btn:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.2s;
@@ -264,7 +252,7 @@ swiper-slide {
 .faq-container {
     padding-top: 15px;
     max-width: 100%;
-    height: 100vh;
+    height: auto;
     margin: 65px;
 }
 
@@ -274,6 +262,7 @@ swiper-slide {
 }
 
 .accordion {
+    border-radius: 5px;
     margin: 2px;
     background-color: #eee;
     color: #444;
