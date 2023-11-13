@@ -38,11 +38,6 @@ header {
     color: #2b2828;
 }
 
-#first-nav {
-    background-color: #7a7474; 
-    height: 25px;
-}
-
 /* ---------------------------- Nav Bar -----------------------------------*/
 
 #logo-name {
@@ -93,41 +88,59 @@ li a:hover {
 /* Login Button */
 
 .login-btn {
-    color: white;
+    color: #111;
     font-size: 1em;
     margin-right: 25px;
     height: 35px;
     width: 120px;
     border: none;
-    background-color: #0056b3;
+    background: none;
     border-radius: 10px;
 }
 
 /* ---------------------------- Home -----------------------------------*/
 
 #home {
-    padding: 200px 0 0 70px;
+    padding: 200px 50px 0 50px;
     color: white;
     background: url(../img/background2-PhotoRoom.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    position: relative;
+    z-index: -1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    }
 }
 
 #home h1 {
-    display: inline-block;
-    position: relative;
+    text-align: center;
     padding-bottom: 5px;
     border-radius: 10px;
 }
 
-#home h5, p{
+#home h5, p {
+    text-align: center;
     padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 1rem;    
+    letter-spacing: 1px;
 }
 
-#home span {
-    color:#fb8500;
-    font-weight: bold;
+
+.center-container {
+    text-align: center;
 }
 
 #click-btn {
@@ -135,10 +148,10 @@ li a:hover {
     font-size: 1em;
     height: 50px;
     width: 150px;
-    border: 1px solid #0056b3;  
+    border: 1px solid rgba(0, 0, 0, 0.6);  
     border-radius: 10px; 
     cursor: pointer;
-    background-color: #0056b3;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 #click-btn:hover {
@@ -244,6 +257,57 @@ swiper-slide {
 .service-card:hover {
     animation: 0.8s;
     transform: scale(1.05);
+}
+
+/* ---------------------------------- FAQ ----------------------------------------- */
+
+.faq-container {
+    padding-top: 15px;
+    max-width: 100%;
+    height: 100vh;
+    margin: 65px;
+}
+
+.faq-container h1 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.accordion {
+    margin: 2px;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 /* ---------------------------------- Contact Us ----------------------------------------- */
