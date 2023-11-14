@@ -9,6 +9,7 @@
         position: fixed;
         background-color: #f1f1f1;
         border-radius: 0 0 15px 15px;
+        height: fit-content;
     }
 
     #first-nav {
@@ -62,9 +63,9 @@
     .sidenav .closebtn {
         position: absolute;
         top: 0;
-        right: 5px;
+        right: 0;
         font-size: 45px;
-        margin-left: 50px;
+        margin-right: 12px;
     }
 
     .menu-button {
@@ -98,18 +99,6 @@
         margin-right: 0;
     }
 
-    .menu-button {
-        float: right;
-        background: none;
-        visibility: visible;
-        border: none;
-        color: black;
-        font-size: 25px;
-        cursor: pointer;
-        padding: auto 50 50 10;
-        margin-right: 12px;
-    }
-
     nav ul{
         float: none;
     }
@@ -136,7 +125,7 @@
 
     #home {
         padding: 85px 0 0 10px;
-        background: url(../img/background2-PhotoRoom.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background2-PhotoRoom.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -227,6 +216,17 @@
         margin: 15px;
     }
 
+    /* ------------------------------------ Footer ------------------------------------------- */
+
+    .footer ul {
+        display: block;
+    }
+
+    .footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+
 }
 
 /*------------------------------Desktop mode for Mobile Phone-----------------------------------*/
@@ -235,6 +235,7 @@
     
     #home {
         min-height: 100%;
+        padding-bottom: 15px;
     }
 
     #click-btn {

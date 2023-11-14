@@ -13,9 +13,9 @@ var modalImage = modal.querySelector(".modal-image");
 function modalShow(cardIndex) {
 
     // Enable blur effect
-    blurElement.style.backgroundColor = "(0, 0, 0, 0.5);"
+    blurElement.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     blurElement.style.backdropFilter = "blur(5px)";
-    blurElement.style.height = "1000%";
+    blurElement.style.height = "1000vh";
     blurElement.style.width = "100%";
 
     modal.style.display = "block";
@@ -44,7 +44,7 @@ function closeModal() {
     modal.style.display = "none";
 
     // Disable blur effect
-    blurElement.style.backgroundColor = ""
+    blurElement.style.backgroundColor = "";
     blurElement.style.backdropFilter = "";
     blurElement.style.height = "";
     blurElement.style.width = "";
@@ -95,8 +95,6 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
-
-
 
 // Accordion
 
