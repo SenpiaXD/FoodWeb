@@ -258,7 +258,13 @@ swiper-slide {
 
 .faq-container h1 {
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
+}
+
+.selection-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 50px;
 }
 
 .accordion {
@@ -280,8 +286,8 @@ swiper-slide {
     background-color: #ccc;
 }
 
-.accordion:after {
-    content: '\002B';
+.accordion:after { 
+    content: '\2B9D';
     color: #777;
     font-weight: bold;
     float: right;
@@ -289,11 +295,12 @@ swiper-slide {
 }
 
 .active:after {
-    content: "\2212";
+    content: "\2B9F";
 }
 
 .panel {
-    background-color: white;
+    border-radius: 10px;
+    background-color: #E7F0FE;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
