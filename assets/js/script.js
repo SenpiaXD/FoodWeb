@@ -86,15 +86,24 @@ window.onscroll = () => {
     prevScrollPos = currentScrollPos;
 };
 
-// 
+// Side bar
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
-
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    if(window.innerWidth <= 950) {
+        const navList = document.getElementById("nav-ul");
+
+        navList.addEventListener("click", () => {
+            document.getElementById("mySidenav").style.width = "0";
+        });
+    }
+});
 
 // Accordion
 
