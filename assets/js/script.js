@@ -124,3 +124,26 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+// Adjust the scroll position when clicking on the navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const sectionID = this.getAttribute('href');
+        const section = document.querySelector(sectionID);
+
+        let headerOffset = document.querySelector('header').offsetHeight;
+        let aosOffset = 85.5;
+
+        if (window.innerWidth < 950) {
+            headerOffset = 0;
+        }
+        if (section) {
+            const offsetTop = section.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({
+                top: offsetTop - headerOffset - aosOffset,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
