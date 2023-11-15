@@ -1,6 +1,6 @@
 // Functionality for Every View: Modal View 
 
-const blurElement = document.getElementById("overlay");
+const blurElement = document.getElementById("blur-container");
 
 var modal = document.getElementById("modal");
 
@@ -12,12 +12,7 @@ var modalImage = modal.querySelector(".modal-image");
 
 function modalShow(cardIndex) {
 
-    // Enable blur effect
-    blurElement.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-    blurElement.style.backdropFilter = "blur(5px)";
-    blurElement.style.height = "1000vh";
-    blurElement.style.width = "100%";
-
+    blurElement.style.filter = "blur(10px)";
     modal.style.display = "block";
 
     const jsonDataArray = "./assets/json/aboutStudent.json";
@@ -41,13 +36,8 @@ document.addEventListener("click", function () {
 });
 
 function closeModal() {
+    blurElement.style.filter = "";
     modal.style.display = "none";
-
-    // Disable blur effect
-    blurElement.style.backgroundColor = "";
-    blurElement.style.backdropFilter = "";
-    blurElement.style.height = "";
-    blurElement.style.width = "";
 }
 
 // BACKTOTOP
@@ -67,8 +57,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Hide navbar 
-
+// Hide navbar while scrolling
 let prevScrollPos = window.scrollY;
     
 const navbar = document.getElementById("overlay");
@@ -92,7 +81,7 @@ function openNav() {
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.width = "0%";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -100,13 +89,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const navList = document.getElementById("nav-ul");
 
         navList.addEventListener("click", () => {
-            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav").style.width = "0%";
         });
     }
 });
 
 // Accordion
-
 document.addEventListener("DOMContentLoaded", function() {
 
     var acc = document.getElementsByClassName("accordion");
@@ -147,3 +135,23 @@ document.querySelectorAll('nav a').forEach(anchor => {
         }
     });
 });
+
+// Checking if the user changing the width by inspecting: Mobile to deskopt mode
+let isMobile = window.innerWidth <= 950;
+let hasReloaded = false;
+
+window.addEventListener('resize', reloadPageOnResize);
+
+function reloadPageOnResize() {
+    const newIsMobile = window.innerWidth <= 950;
+
+    if (isMobile !== newIsMobile && !hasReloaded) {
+        location.reload();
+        hasReloaded = true;
+    } else if (isMobile !== newIsMobile) {
+        hasReloaded = false;
+    }
+    isMobile = newIsMobile;
+}
+
+reloadPageOnResize();

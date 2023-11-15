@@ -141,8 +141,7 @@
     }
 
     swiper-slide {
-        max-width: 400px;
-        min-width: 400px;
+        max-width: 1000px;
     }
 
     .main-card {

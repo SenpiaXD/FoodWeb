@@ -96,7 +96,7 @@ header li a:hover {
 #home {
     padding: 200px 50px 0 50px;
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background2-PhotoRoom.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background2-PhotoRoom.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
