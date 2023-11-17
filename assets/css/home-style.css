@@ -123,6 +123,7 @@ header li a:hover {
 }
 
 .click-btn {
+    margin-top: 25px;
     color: white;
     font-size: 1em;
     height: 50px;
@@ -220,17 +221,17 @@ swiper-slide {
     border: 1px solid #ccc;
     border-radius: 25px;
     margin: 10px;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
     box-shadow: 0 0px 100px rgb(135, 206, 235);
     background-color: #fff;
 }
 
 .service-card img {
-    min-width: 250px;
-    max-width: 250px;
-    min-height: 350px;
-    max-height: 350px;
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 250px;
+    max-height: 250px;
     border-radius: 10px;
 }
 
@@ -250,7 +251,7 @@ swiper-slide {
 
 .faq-container h1 {
     text-align: center;
-    text-transform: uppercase;
+    text-transform: initial;
 }
 
 .selection-card-container {
