@@ -282,7 +282,7 @@ swiper-slide {
 .accordion:after { 
     content: '\2B9D';
     color: #777;
-    font-weight: bold;
+    font-size: 18px;
     float: right;
     margin-left: 5px;
 }

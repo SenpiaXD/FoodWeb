@@ -170,18 +170,6 @@
         gap: 0;
     }
 
-    .accordion:after { 
-        content: '\2B9D';
-        color: #777;
-        font-weight: bold;
-        float: right;
-        margin-left: 5px;
-    }
-    
-    .active:after {
-        content: "\2B9F";
-    }
-
     /* ------------------------------------ Service ------------------------------------------- */
 
     .service-container {
