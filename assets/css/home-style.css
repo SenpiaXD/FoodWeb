@@ -218,11 +218,11 @@ swiper-slide {
 
 .service-card {
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 25px;
     margin: 10px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 100px rgba(63, 83, 237, 0.500);
     background-color: #fff;
 }
 
